@@ -50,6 +50,13 @@ public class AuthorService {
 
 		        return this.repo.save(existing);
 		        }
+		    
+		    
+		    
+		    	public List <Author> getAll(){
+		    	
+		    	return this.repo.findAll();
+		    }
 	            //delete
 		    public boolean removeAuthor(Long id) {
 		        // removes the entity

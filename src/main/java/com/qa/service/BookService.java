@@ -46,8 +46,17 @@ public class BookService {
 		        existing.setAge(newBook.getAge());
 		        existing.setName(newBook.getName());
 
-		        return this.repo.save(existing);
-		        }
+		        return this.repo.save(existing);    
+		        
+		   
+		    }
+		    
+		    public List <Book> getAll(){
+		    	
+		    	
+		    	return this.repo.findAll();
+		    }
+		        
 	            //delete
 		    public boolean removeBook(Long id) {
 		        // removes the entity
