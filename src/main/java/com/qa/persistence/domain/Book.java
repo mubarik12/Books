@@ -55,10 +55,10 @@ import javax.persistence.Id;
 	    public void setId(long id) {
 	        this.id = id;
 	    }
-	    public int getAccountNumber() {
+	    public int getBookNumber() {
 	        return bookNumber;
 	    }
-	    public void setAccountNumber(int bookNumber) {
+	    public void setBookNumber(int bookNumber) {
 	        this.bookNumber = bookNumber;
 
 	}
