@@ -22,8 +22,11 @@ import javax.persistence.Id;
 	    private int bookNumber;
 	    
 	    private String name;
+	    private String bookTitle;
 	    
-	    private int age;
+	   
+	    private int numberPages;
+	    
 	    
 	    //constructors
 	    public Book() {
@@ -31,21 +34,42 @@ import javax.persistence.Id;
 	    }
 	    
 	    
-	     public Book(long id, int bookNumber, String name, int age) {
+	     public Book(long id, int bookNumber, String name, int numberPages, String bookTitle) {
 	        super();
 	        this.id = id;
 	        this.bookNumber = bookNumber;
 	        this.name = name;
+	        this.numberPages = numberPages;
+	        this.bookTitle = bookTitle;
 	    }
 	    //getters and setters
 	    
-	    public int getAge() {
-			return age;
+	
+
+
+	
+
+
+	
+
+
+		public String getBookTitle() {
+			return bookTitle;
 		}
 
 
-		public void setAge(int age) {
-			this.age = age;
+		public void setBookTitle(String bookTitle) {
+			this.bookTitle = bookTitle;
+		}
+
+
+		public int getNumberPages() {
+			return numberPages;
+		}
+
+
+		public void setNumberPages(int numberPages) {
+			this.numberPages = numberPages;
 		}
 
 

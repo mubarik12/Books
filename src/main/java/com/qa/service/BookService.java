@@ -43,9 +43,10 @@ public class BookService {
 		        Optional<Book> existingOptional = this.repo.findById(id);
 		        Book existing = existingOptional.get();
 
-		        existing.setAge(newBook.getAge());
+		        
 		        existing.setName(newBook.getName());
-
+                existing.setNumberPages(newBook.getNumberPages());
+                existing.setBookTitle(newBook.getBookTitle());
 		        return this.repo.save(existing);    
 		        
 		   
