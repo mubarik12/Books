@@ -1,10 +1,16 @@
 package com.qa.persistence.domain;
 
+
+
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+
 	@Entity
 
 
@@ -16,18 +22,20 @@ import javax.persistence.Id;
 	    //Fields 
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	   
+	    
+	   
 	    private long  id ;
 	    
 	    @Column(unique = true, nullable = false)
-	    private int bookNumber;
 	    
+	    private int bookNumber;
 	    private String name;
 	    private String bookTitle;
-	    
-	   
 	    private int numberPages;
-	    
-	    
+	  @ManyToOne  
+	  private Author author;
+	  
 	    //constructors
 	    public Book() {
 	        

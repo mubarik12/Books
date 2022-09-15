@@ -1,15 +1,22 @@
 package com.qa.persistence.domain;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+
+
+
 
 
 
 
 @Entity
+
 public class Author {
 
  
@@ -18,14 +25,21 @@ public class Author {
 	    //Fields 
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    @Column (name = "author_id")
 	    private long  id ;
 	    
-	    @Column(unique = true, nullable = false)
+	    @Column(name = "author_number")
+	    
 	    private int authorNumber;
-	    
+	    @Column(name = "author_name")
 	    private String name;
-	    
+	    @Column (name = "author_age")
 	    private int age;
+	    
+	    @OneToMany
+	    
+	    private List<Book> books;
+	  
 	    
 	    //constructors
 	    public Author() {
@@ -40,6 +54,9 @@ public class Author {
 	        this.authorNumber = authorNumber;
 	        this.name = name;
 	    }
+	     
+	   
+	     
 	    //getters and setters
 	    
 	    public int getAge() {
