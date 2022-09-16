@@ -39,7 +39,9 @@ public class AuthorService {
 		    public List<Author> getAllAuthor() {
 		        return this.repo.findAll();
 		    }
-		        
+		    public Optional<Author> findById(Long authorId) {
+		        return this.repo.findById(authorId);    
+		    } 
 
 		    public Author updateAuthor(Long id, Author newAuthor) {
 		        Optional<Author> existingOptional = this.repo.findById(id);

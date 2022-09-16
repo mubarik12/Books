@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.ControllerSystemIntegrationTests.AuthorIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 2.417 s <<< FAILURE! - in com.qa.ControllerSystemIntegrationTests.AuthorIntegrationTest
+getByIsbnTest  Time elapsed: 0.222 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.qa.ControllerSystemIntegrationTests.AuthorIntegrationTest.getByIsbnTest(AuthorIntegrationTest.java:95)
+
+deleteByIsbn  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<202> but was:<404>
+	at com.qa.ControllerSystemIntegrationTests.AuthorIntegrationTest.deleteByIsbn(AuthorIntegrationTest.java:138)
+
+getAuthorsTest  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.qa.ControllerSystemIntegrationTests.AuthorIntegrationTest.getAuthorsTest(AuthorIntegrationTest.java:78)
+
+updateAuthorTest  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<202> but was:<404>
+	at com.qa.ControllerSystemIntegrationTests.AuthorIntegrationTest.updateAuthorTest(AuthorIntegrationTest.java:130)
+

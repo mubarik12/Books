@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 1, Time elapsed: 0.116 s <<< FAILURE! - in com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests
+getByIsbnTest  Time elapsed: 0.043 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_km0i87cg0utplw4qg471262q4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'UK_km0i87cg0utplw4qg471262q4'
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+
+updateBookTest  Time elapsed: 0.015 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_km0i87cg0utplw4qg471262q4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'UK_km0i87cg0utplw4qg471262q4'
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+
+createBookTest  Time elapsed: 0.015 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_km0i87cg0utplw4qg471262q4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'UK_km0i87cg0utplw4qg471262q4'
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+
+deleteByIsbn  Time elapsed: 0.021 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_km0i87cg0utplw4qg471262q4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'UK_km0i87cg0utplw4qg471262q4'
+	at com.qa.ControllerSystemIntegrationTests.BookControllerSystemIntegrationTests.init(BookControllerSystemIntegrationTests.java:55)
+
