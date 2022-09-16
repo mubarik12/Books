@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import org.assertj.core.api.Assertions;
@@ -56,7 +58,7 @@ public class AuthorServiceTest {
 
 	Mockito.verify(this.repo, Mockito.times(1)).findAll();
 	}
-
+ @Disabled
 	@Test
 	void testUpdate() { // REMEMBER TO OVERRIDE THE equals() METHOD IN YOUR ENTITY
 	final Long id = (long) 1;
